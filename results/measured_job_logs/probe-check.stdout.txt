@@ -1,0 +1,1 @@
+{"distinguishing_colorings_examined": 314, "tested_families": 1294, "verified_posets": 50}

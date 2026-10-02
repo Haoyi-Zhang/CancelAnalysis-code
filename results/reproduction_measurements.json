@@ -1,0 +1,91 @@
+{
+  "cumulative_job_cpu_seconds": 7.971551,
+  "directly_compared_files": 73,
+  "environment": {
+    "kernel_release": "6.18.44",
+    "operating_system": "Linux",
+    "python_implementation": "CPython",
+    "python_version": "3.13.5"
+  },
+  "jobs": [
+    {
+      "cpu_seconds": 0.903656,
+      "exit_code": 0,
+      "job": "construct",
+      "peak_rss_kib": 95156,
+      "resumed": false,
+      "wall_seconds": 0.06421092699997644
+    },
+    {
+      "cpu_seconds": 1.073543,
+      "exit_code": 0,
+      "job": "campaign",
+      "peak_rss_kib": 94644,
+      "resumed": false,
+      "wall_seconds": 0.2284463870000195
+    },
+    {
+      "cpu_seconds": 0.849932,
+      "exit_code": 0,
+      "job": "closure-candidates",
+      "peak_rss_kib": 94252,
+      "resumed": false,
+      "wall_seconds": 0.007117090999997799
+    },
+    {
+      "cpu_seconds": 0.967638,
+      "exit_code": 0,
+      "job": "closure-check",
+      "peak_rss_kib": 93872,
+      "resumed": false,
+      "wall_seconds": 0.06490284200003771
+    },
+    {
+      "cpu_seconds": 0.852003,
+      "exit_code": 0,
+      "job": "probe-candidates",
+      "peak_rss_kib": 92840,
+      "resumed": false,
+      "wall_seconds": 0.004076707999956852
+    },
+    {
+      "cpu_seconds": 0.8008869999999999,
+      "exit_code": 0,
+      "job": "probe-check",
+      "peak_rss_kib": 93496,
+      "resumed": false,
+      "wall_seconds": 0.011712809000016478
+    },
+    {
+      "cpu_seconds": 0.805047,
+      "exit_code": 0,
+      "job": "reversible",
+      "peak_rss_kib": 92840,
+      "resumed": false,
+      "wall_seconds": 0.004876394000007167
+    },
+    {
+      "cpu_seconds": 0.836908,
+      "exit_code": 0,
+      "job": "transport",
+      "peak_rss_kib": 92840,
+      "resumed": false,
+      "wall_seconds": 0.004894519999993463
+    },
+    {
+      "cpu_seconds": 0.881937,
+      "exit_code": 0,
+      "job": "tests",
+      "peak_rss_kib": 98280,
+      "resumed": false,
+      "wall_seconds": 0.03886412900004643
+    }
+  ],
+  "maximum_job_peak_rss_kib": 98280,
+  "note": "CPU covers these measured jobs, not all earlier interactive prototypes; clean runs must not use --resume.",
+  "regression_tests": 45,
+  "resume_used": false,
+  "scientific_jobs": 9,
+  "success": true,
+  "timing_results_excluded_from_equality": true
+}

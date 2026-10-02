@@ -1,0 +1,49 @@
+{
+  "domain": "Boolean lattice with two atoms",
+  "closure_count": 7,
+  "all_probes": [
+    {
+      "codomain": 2,
+      "monotone_probes": 6,
+      "strict_probes": 0,
+      "closure_separating": 0
+    },
+    {
+      "codomain": 3,
+      "monotone_probes": 20,
+      "strict_probes": 1,
+      "closure_separating": 1
+    }
+  ],
+  "rank_probe": [
+    0,
+    1,
+    1,
+    2
+  ],
+  "rank_is_injective": false,
+  "rank_is_automorphism_rigid": false,
+  "bit_probe": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "bit_probe_distinct_closure_collision": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      2,
+      3
+    ]
+  ],
+  "cpu_seconds": 0.00038778599999989005,
+  "wall_seconds": 0.00038495400008287106,
+  "peak_rss_kib": 92332
+}

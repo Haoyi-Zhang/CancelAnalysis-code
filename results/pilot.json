@@ -1,0 +1,60 @@
+{
+  "pilot": "finite rigidity and cancellation falsification",
+  "workers": 1,
+  "lattice_elements": 4,
+  "automorphisms": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      0,
+      2,
+      1,
+      3
+    ]
+  ],
+  "fixed_output_factorizations": 4,
+  "locally_natural_factorizations": 2,
+  "minimal_generator_witness": {
+    "arrow": [
+      0,
+      1
+    ],
+    "node": 0,
+    "input": 1,
+    "left": 1,
+    "right": 2
+  },
+  "noninjective_probe": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "probe_stabilizer_size": 1,
+  "unrestricted_monotone_counterexample_pair": [
+    0,
+    2
+  ],
+  "full_interval_distributivity_counterexample": {
+    "x": [
+      1
+    ],
+    "y": [
+      0
+    ],
+    "z": [
+      2
+    ],
+    "left": [
+      1
+    ],
+    "right": []
+  },
+  "cpu_seconds": 7.734199999998026e-05,
+  "wall_seconds": 7.449399998904482e-05,
+  "peak_rss_kib": 92336
+}

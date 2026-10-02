@@ -1,0 +1,1 @@
+{"all_certificates_match": true, "cases": 63, "externally_masked_local_defects": 34, "global_diagrams": 4464, "globally_natural": 54, "local_diagrams": 35010, "locally_natural": 20, "probe_diagrams": 61164}

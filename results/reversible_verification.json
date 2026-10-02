@@ -1,0 +1,14 @@
+{
+  "automorphisms": 2,
+  "factorizations": 256,
+  "fixed_final": "identity",
+  "gates": 3,
+  "locally_natural": 4,
+  "objects": 4,
+  "observed_natural": {
+    "both-cuts": 4,
+    "first-cut": 32,
+    "none": 256,
+    "rank": 256
+  }
+}

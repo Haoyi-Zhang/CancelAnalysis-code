@@ -1,0 +1,1754 @@
+[
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 2,
+    "minimum_count_probes": 0,
+    "points": 1,
+    "producer_supports": [],
+    "upper_sets": [
+      1
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 4,
+        "probes": 1,
+        "rigid_families": 2
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 4,
+    "minimum_count_probes": 1,
+    "points": 2,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      1,
+      2
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 3,
+    "minimum_count_probes": 0,
+    "points": 2,
+    "producer_supports": [],
+    "upper_sets": [
+      3,
+      2
+    ]
+  },
+  {
+    "automorphism_count": 6,
+    "colorings_examined": 15,
+    "distinguishing_number": 3,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 8,
+        "probes": 1,
+        "rigid_families": 0
+      },
+      {
+        "families": 64,
+        "probes": 2,
+        "rigid_families": 24
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      2
+    ],
+    "first_optimal_supports": [
+      1,
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 2,
+    "points": 3,
+    "producer_supports": [
+      2,
+      4
+    ],
+    "upper_sets": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 0,
+    "points": 3,
+    "producer_supports": [],
+    "upper_sets": [
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 0,
+    "points": 3,
+    "producer_supports": [],
+    "upper_sets": [
+      5,
+      2,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 8,
+        "probes": 1,
+        "rigid_families": 4
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 5,
+    "minimum_count_probes": 1,
+    "points": 3,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      7,
+      2,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 0,
+    "points": 3,
+    "producer_supports": [],
+    "upper_sets": [
+      1,
+      6,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 4,
+    "minimum_count_probes": 0,
+    "points": 3,
+    "producer_supports": [],
+    "upper_sets": [
+      7,
+      6,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 8,
+        "probes": 1,
+        "rigid_families": 4
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 5,
+    "minimum_count_probes": 1,
+    "points": 3,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      5,
+      6,
+      4
+    ]
+  },
+  {
+    "automorphism_count": 24,
+    "colorings_examined": 126,
+    "distinguishing_number": 4,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 0
+      },
+      {
+        "families": 256,
+        "probes": 2,
+        "rigid_families": 24
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "first_optimal_supports": [
+      3,
+      5
+    ],
+    "jointly_injective": false,
+    "lattice_size": 16,
+    "minimum_count_probes": 2,
+    "points": 4,
+    "producer_supports": [
+      10,
+      12
+    ],
+    "upper_sets": [
+      1,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      4
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      3,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      5,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      7,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      9,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      11,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      4
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      13,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 6,
+    "colorings_examined": 23,
+    "distinguishing_number": 3,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 0
+      },
+      {
+        "families": 256,
+        "probes": 2,
+        "rigid_families": 96
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      2
+    ],
+    "first_optimal_supports": [
+      2,
+      4
+    ],
+    "jointly_injective": false,
+    "lattice_size": 9,
+    "minimum_count_probes": 2,
+    "points": 4,
+    "producer_supports": [
+      4,
+      8
+    ],
+    "upper_sets": [
+      15,
+      2,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      1,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      7,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 6,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      5,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 12
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 9,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      9,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      15,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      13,
+      6,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      1,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      11,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 12
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 9,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      5,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      15,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 6,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      9,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      13,
+      10,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      4
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      1,
+      14,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      4
+    ],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      15,
+      14,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      5,
+      14,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      9,
+      14,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 4,
+    "colorings_examined": 7,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 4
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      5
+    ],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      10
+    ],
+    "upper_sets": [
+      13,
+      14,
+      4,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 6,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 12,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      1,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 3,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 12
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 9,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      8
+    ],
+    "upper_sets": [
+      3,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      13,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      15,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      9,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      11,
+      2,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 8,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      1,
+      14,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 5,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      15,
+      14,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 6,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "first_optimal_supports": [
+      1
+    ],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      2
+    ],
+    "upper_sets": [
+      13,
+      14,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      9,
+      14,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 10,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      1,
+      10,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      11,
+      10,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 1,
+    "colorings_examined": 1,
+    "distinguishing_number": 1,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 1
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "first_optimal_supports": [],
+    "jointly_injective": false,
+    "lattice_size": 7,
+    "minimum_count_probes": 0,
+    "points": 4,
+    "producer_supports": [],
+    "upper_sets": [
+      13,
+      10,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 2,
+    "colorings_examined": 4,
+    "distinguishing_number": 2,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 8
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "first_optimal_supports": [
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 6,
+    "minimum_count_probes": 1,
+    "points": 4,
+    "producer_supports": [
+      4
+    ],
+    "upper_sets": [
+      15,
+      10,
+      12,
+      8
+    ]
+  },
+  {
+    "automorphism_count": 6,
+    "colorings_examined": 33,
+    "distinguishing_number": 3,
+    "family_counts": [
+      {
+        "families": 1,
+        "probes": 0,
+        "rigid_families": 0
+      },
+      {
+        "families": 16,
+        "probes": 1,
+        "rigid_families": 0
+      },
+      {
+        "families": 256,
+        "probes": 2,
+        "rigid_families": 96
+      }
+    ],
+    "first_distinguishing_coloring": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "first_optimal_supports": [
+      1,
+      2
+    ],
+    "jointly_injective": false,
+    "lattice_size": 9,
+    "minimum_count_probes": 2,
+    "points": 4,
+    "producer_supports": [
+      2,
+      4
+    ],
+    "upper_sets": [
+      9,
+      10,
+      12,
+      8
+    ]
+  }
+]
