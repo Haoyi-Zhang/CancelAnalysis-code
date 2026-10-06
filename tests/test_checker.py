@@ -152,6 +152,87 @@ class ValidationTests(unittest.TestCase):
         self.assertFalse(result['locally_natural'])
         self.assertEqual(result['probe_failures'],0)
 
+class ReflectionScopeTests(unittest.TestCase):
+    """Sufficient reflection premises are not necessary at every transport/instance."""
+    @staticmethod
+    def category(objects):
+        if objects == 1:
+            return {'programs':[['entry','return']], 'arrows':[[0,0]],
+                    'identities':[0], 'generators':[], 'composition':[[0]]}
+        return {'programs':[['entry','return'],['entry','skip-0','return']],
+                'arrows':[[0,0],[0,1],[1,1]], 'identities':[0,2],
+                'generators':[1], 'composition':[[0,None,None],[1,None,None],[None,1,2]]}
+
+    @classmethod
+    def forest(cls, tables, transport=None):
+        objects=len(tables)
+        arrows=1 if objects==1 else 3
+        maps=[list(range(4)) for _ in range(arrows)]
+        if transport is not None:
+            maps[1]=transport
+        return {'case':'reflection-scope-control', 'category':cls.category(objects),
+                'domains':[{'name':'B2','labels':list('0123'),
+                            'leq':[[int(x&y==x) for y in range(4)] for x in range(4)]}],
+                'inputs':[0],
+                'nodes':[{'inputs':[0],'domain':0,'tables':tables},
+                         {'inputs':[1],'domain':0,'tables':[[3]*4 for _ in range(objects)]}],
+                'outputs':[2], 'transports':[copy.deepcopy(maps) for _ in range(3)],
+                'probes':[{'wire':1,'tables':[[0]*4]}]}
+
+    @staticmethod
+    def closures():
+        # Exhaust all 4^4 own tables rather than import a case producer.
+        return [list(f) for f in itertools.product(range(4),repeat=4)
+                if all(x&f[x]==x and f[f[x]]==f[x] for x in range(4))
+                and all(x&y!=x or f[x]&f[y]==f[x] for x in range(4) for y in range(4))]
+
+    def test_identity_only_category_needs_no_strict_observer(self):
+        closures=self.closures()
+        self.assertEqual(len(closures),7)
+        for c in closures:
+            r=checker.audit(self.forest([c]))
+            self.assertTrue(r['nested_closure_forest'])
+            self.assertFalse(r['all_internal_probes_strict'])
+            self.assertTrue(r['locally_natural'])
+            self.assertTrue(r['globally_natural'])
+            self.assertEqual(r['probe_failures'],0)
+
+    def test_constant_top_transport_needs_no_strict_observer(self):
+        closures=self.closures()
+        identity_hidden=0
+        for c,d in itertools.product(closures,repeat=2):
+            r=checker.audit(self.forest([c,d],transport=[3]*4))
+            self.assertTrue(r['nested_closure_forest'])
+            self.assertFalse(r['constant_transport'])
+            self.assertFalse(r['all_internal_probes_strict'])
+            self.assertTrue(r['locally_natural'])
+            self.assertTrue(r['globally_natural'])
+            self.assertEqual(r['probe_failures'],0)
+            control=checker.audit(self.forest([c,d]))
+            self.assertTrue(control['globally_natural'])
+            self.assertEqual(control['probe_failures'],0)
+            identity_hidden+=not control['locally_natural']
+        self.assertEqual(identity_hidden,42)
+
+    def test_monotonicity_can_determine_an_unreached_entry(self):
+        # A prefix reaches only 0. A monotone chain map with f(0)=1 is
+        # necessarily constant 1, so full formal coverage is not necessary here.
+        monotone=[[0,0],[0,1],[1,1]]
+        self.assertEqual([f for f in monotone if f[0]==1],[[1,1]])
+        c={'case':'unreached-but-determined', 'category':self.category(2),
+           'domains':[{'name':'chain2','labels':['0','1'],'leq':[[1,1],[0,1]]}],
+           'inputs':[0],
+           'nodes':[{'inputs':[0],'domain':0,'tables':[[0,0],[0,0]]},
+                    {'inputs':[1],'domain':0,'tables':[[1,1],[1,1]]}],
+           'outputs':[2], 'transports':[[[0,1] for _ in range(3)] for _ in range(3)],
+           'probes':[{'wire':1,'tables':[[0,1]]}]}
+        r=checker.audit(c)
+        self.assertEqual(r['input_coverage_at_object_zero'],[[2,2],[1,2]])
+        self.assertTrue(r['locally_natural'])
+        self.assertTrue(r['globally_natural'])
+        self.assertEqual(r['probe_failures'],0)
+
+
 class NonbijectiveTests(unittest.TestCase):
     def test_nonbijective_nested_natural(self):
         r=checker.audit(checker.load(ROOT/'cases/nonbijective-natural.json'))

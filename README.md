@@ -22,7 +22,7 @@ From this directory, use a fresh output path:
 python reproduce.py --output reproduction
 ```
 
-The runner executes nine sequential bounded jobs with one child process at a time. It reconstructs all 63 graph cases, independently checks their certificates, rebuilds and verifies the closure and count-probe universes, runs the exact reversible and transported-square oracles, and executes 45 regression tests. It then compares 73 deterministic JSON/CSV evidence files directly with the bundled results. Timing measurements are recorded but excluded from equality checks.
+The runner executes nine sequential bounded jobs with one child process at a time. It reconstructs all 63 graph cases, independently checks their certificates, rebuilds and verifies the closure and count-probe universes, runs the exact reversible and transported-square oracles, and executes 48 regression tests. It then compares 73 deterministic JSON/CSV evidence files directly with the bundled results. Timing measurements are recorded but excluded from equality checks.
 
 Expected scientific summary:
 
@@ -39,7 +39,7 @@ Expected scientific summary:
 | Ordinary-global equations checked | 4,464 |
 | Probe equations checked | 61,164 |
 | Total graph equations | 100,638 |
-| Regression tests | 45 |
+| Regression tests | 48 |
 | Directly compared deterministic files | 73 |
 
 The largest graph case has 67,392 equations and 75,474 input bytes. Compact certificates range from 148 to 175 bytes. Every producer certificate is recomputed extensionally before acceptance.
@@ -54,6 +54,8 @@ The mathematical argument distinguishes four interfaces.
 - Closure operators require exactly separation of strict comparable pairs. The transported theorem needs an extensive idempotent source, a monotone extensive target, and a monotone transport; a defect is observed at `x` or after one source application.
 - Nested unary closure forests use absorption to collapse every root-to-node path, so the closure theorem reflects all local squares without prefix surjectivity. Branching is allowed; merge nodes are not. The localized witness also requires natural observation families and strict comparable-pair separation at generator targets.
 - Reversible pipelines with identity transports require trivial observation stabilizers. The remaining compatible factorizations have an exact finite-group count.
+
+The forest theorem supplies sufficiency for arbitrary admitted monotone transports. Comparable-pair separation is also universally necessary for unrestricted nested closure families with a common lattice, identity state and observer transports, fixed observations, and a connected category with at least two objects. It is not necessary for every category or transport. Three additional regression tests enumerate all seven B2 closures in an identity-only category, all 49 closure pairs with constant-top generator transport (and all 49 identity-transport controls), and a monotone chain node whose unreached entry is already determined. These tests do not add cases to the 63-instance corpus or change its equation totals.
 
 For finite distributive lattices, the minimum number of permitted unweighted subset-count probes is `ceil(log2 D(P))`, where `D(P)` is the distinguishing number of the join-irreducible poset and `D(empty)=1`. Hence the one-element lattice needs zero probes. For an antichain the formula `D(P)=d` is stated only for `d>=1`. Rank identifies every closure in the selected universes while preserving all lattice automorphisms, demonstrating that closure and reversible interfaces are genuinely different.
 
@@ -85,9 +87,11 @@ The retained negative control `closure-boolean-2-mutated-flat.json` has source t
 
 ## Resource and portability boundaries
 
-The current clean non-resumed run used Linux kernel 6.18.44 and CPython 3.13.5. The nine jobs used 7.971551 aggregate child CPU seconds and a maximum single-job peak resident set of 98,280 KiB. These values cover the measured jobs only; they are not a retrospective total for proof development, editing, compilation, or packaging. Per-case timing is descriptive and never part of deterministic equality.
+The bundled historical clean non-resumed run used Linux kernel 6.18.44 and CPython 3.13.5 and executed the then-current 45 tests. The nine jobs used 7.971551 aggregate child CPU seconds and a maximum single-job peak resident set of 98,280 KiB. These values cover that measured run only, not the current 48-test suite; they are not a retrospective total for proof development, editing, compilation, or packaging. Per-case timing is descriptive and never part of deterministic equality.
 
 The runner rejects a nonempty output unless `--resume` is explicitly supplied. Final validation must not use resume. Scientific children are bounded by an external 120-second timeout and a three-gibibyte address-space limit. Inputs are additionally capped by dimensions and equation counts in the checker.
+
+The prepared `.github/workflows/scientific-checks.yml` runs the whole reproduction from this standalone repository root on Ubuntu 24.04, retains failure gates, and uploads generated evidence and raw job logs even on failure. Preparing the workflow is not evidence that a hosted run has occurred.
 
 ## Interpretation limits
 

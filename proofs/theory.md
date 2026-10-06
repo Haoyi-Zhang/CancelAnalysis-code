@@ -63,6 +63,8 @@ Surjectivity of B_v(P) gives (N) on every formal parent tuple. QED.
 
 Joint surjectivity is a substantive assumption. In a two-element chain, feed the same input twice to a binary node. The families AND at P and first projection at Q agree on the reachable diagonal {(0,0),(1,1)}, but disagree on (1,0). Both argument projections are individually surjective. Even a full observation of the output cannot expose the unreachable disagreement.
 
+Proposition 3 is a sufficient rule, not a claim that coverage is necessary for every fixed monotone instance. On the chain {0<1}, a monotone function with f(0)=1 must also satisfy f(1)=1. A constant-0 prefix can therefore leave input 1 unreachable while the observed value at 0 determines the whole function. A proved law or monotonicity constraint may fix off-relation values; the correlated-input control shows only that this cannot be assumed in general.
+
 ## 2. Masking and the meaning of soundness
 
 ### Proposition 4 (small reversible masking)
@@ -155,6 +157,8 @@ If every non-output observation family is natural and separates strict comparabl
 **Proof.** Local naturality implies observation robustness by Proposition 1. Conversely, path collapse changes naturality of the observed execution at v into Q_v tau c_v(P)=Q_v c_v(Q) tau. For a sink, use the identity observation supplied by the full output. Lemma 8 gives tau c_v(P)=c_v(Q) tau. This holds on generators and hence on all arrows. QED.
 
 For common L, identity transports on wires and observer codomains, fixed observation families Q_v, a connected category with at least two objects, and unrestricted nested closure families, strictness at every internal cut is also necessary for universal reflection. A linear pipeline is already a closure forest. If Q_v flattens a<b, place D_ab and C_b from Theorem 6 at that cut on a nonconstant partition of the program objects, use identity closures above it, and constant-top closures below it. Every observed execution is natural and every sink is constant top, while the selected local square fails. This is universal necessity for the stated class, not instance-wise necessity.
+
+These additional category and transport premises matter. In an identity-only category every local square commutes without any observation. In a two-object insertion category whose generator transport is constant top, every closure square also commutes: tau c(x)=top=c'(tau(x)), since a closure fixes top. Constant observations are natural in both examples. The forest sufficiency theorem remains unchanged, but strictness is not universally necessary for an arbitrary fixed transport.
 
 The height observation r is natural under every order isomorphism, since isomorphisms preserve chains and their lengths. Thus rank gives an explicit observer in the common identity/isomorphism special case. For arbitrary monotone transports, observer naturality must be checked rather than assumed. The noninjective B2 transport (0,1,1,3) preserves rank and supplies a genuinely noninvertible instance. On a distributive ideal lattice, r(I)=|I|.
 

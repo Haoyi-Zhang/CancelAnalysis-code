@@ -52,9 +52,11 @@ At the merge boundary, `correlated-inputs.json` feeds the same Boolean value to 
 
 ## Measurement scope and direct comparison
 
-The current non-resumed run in `results/reproduction_measurements.json` was executed on Linux kernel 6.18.44 with CPython 3.13.5. It ran nine bounded jobs and 45 regression tests in a new output directory. The jobs used 7.971551 aggregate child CPU seconds; the maximum single-job reported peak resident set was 98,280 KiB. These measurements cover only those jobs and are not a retrospective total for proof development, editing, compilation, or packaging.
+The historical non-resumed run in `results/reproduction_measurements.json` was executed on Linux kernel 6.18.44 with CPython 3.13.5. It ran nine bounded jobs and the then-current 45 regression tests in a new output directory. The jobs used 7.971551 aggregate child CPU seconds; the maximum single-job reported peak resident set was 98,280 KiB. These measurements cover only those historical jobs, not the current 48-test suite, and are not a retrospective total for proof development, editing, compilation, or packaging.
 
 The runner directly compares 73 deterministic scientific files: 64 case/certificate JSON files and 9 deterministic result JSON/CSV files. Timing records are excluded from equality. Raw JSON/CSV equality is used rather than a generated checksum manifest.
+
+The three additional tests in `ReflectionScopeTests` retain the limits of necessity claims. All seven B2 closures are natural in a one-object identity-only category with a constant observer. All 49 pairs are natural with constant-top generator transport; in the same two-object category with identity transport, 42 of those pairs hide a local defect. A two-state monotone node with output 1 at its only reachable input 0 has its unreached entry forced to 1. Thus forest necessity needs the additional identity-transport/nontrivial-category premises, and formal-tuple coverage is a generic sufficient condition, not a necessary condition for each fixed monotone instance. The 63-case corpus and its 100,638 equations are unchanged.
 
 ## Scientific scope
 
