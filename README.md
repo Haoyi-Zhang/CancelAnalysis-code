@@ -91,7 +91,7 @@ The bundled historical clean non-resumed run used Linux kernel 6.18.44 and CPyth
 
 The runner rejects a nonempty output unless `--resume` is explicitly supplied. Final validation must not use resume. Scientific children are bounded by an external 120-second timeout and a three-gibibyte address-space limit. Inputs are additionally capped by dimensions and equation counts in the checker.
 
-The prepared `.github/workflows/scientific-checks.yml` runs the whole reproduction from this standalone repository root on Ubuntu 24.04, retains failure gates, and uploads generated evidence and raw job logs even on failure. Preparing the workflow is not evidence that a hosted run has occurred.
+The current Ubuntu 24.04 / CPython 3.12.14 run completed all nine jobs and 48 tests without resume. All 73 deterministic files matched. Aggregate child CPU was 1.657506 seconds and maximum single-job RSS 23,100 KiB; `results/measurements/current-linux/` retains the current record. The scientific workflow uploads raw outputs even after failure.
 
 ## Interpretation limits
 
