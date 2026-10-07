@@ -24,6 +24,14 @@ python reproduce.py --output reproduction
 
 The runner executes nine sequential bounded jobs with one child process at a time. It reconstructs all 63 graph cases, independently checks their certificates, rebuilds and verifies the closure and count-probe universes, runs the exact reversible and transported-square oracles, and executes 48 regression tests. It then compares 73 deterministic JSON/CSV evidence files directly with the bundled results. Timing measurements are recorded but excluded from equality checks.
 
+The checker counts every failed local and ordinary-global equation but retains only the first failed generator square in arrow/node/lexicographic-argument order. Generator declaration order does not choose the witness. This reduces retained failure diagnostics, not equation coverage, and makes no measured runtime claim. The unchanged producer remains a separate certificate implementation. Six additional pure public regression methods use a test-local recursive finite-equation reference:
+
+```sh
+python -B tests/failure_regression.py
+```
+
+Scientific CI runs this separate bounded step explicitly and retains its output on every outcome. It is not silently included in `reproduce.py`'s original 48-test/nine-job receipt; those records and the 73-file comparison remain unchanged. The current test inventory is 48 original methods plus these six.
+
 Expected scientific summary:
 
 | Quantity | Value |
@@ -39,7 +47,7 @@ Expected scientific summary:
 | Ordinary-global equations checked | 4,464 |
 | Probe equations checked | 61,164 |
 | Total graph equations | 100,638 |
-| Regression tests | 48 |
+| Original regression tests in reproduction | 48 |
 | Directly compared deterministic files | 73 |
 
 The largest graph case has 67,392 equations and 75,474 input bytes. Compact certificates range from 148 to 175 bytes. Every producer certificate is recomputed extensionally before acceptance.

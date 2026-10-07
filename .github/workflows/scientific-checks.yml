@@ -15,7 +15,7 @@ jobs:
       PYTHONDONTWRITEBYTECODE: '1'
       PYTHONHASHSEED: '0'
       README_ENTRY: 'README.md'
-      MIN_EXPECTED_PYTHON_SOURCES: '14'
+      MIN_EXPECTED_PYTHON_SOURCES: '15'
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -29,6 +29,15 @@ jobs:
           set -euo pipefail
           python -B .github/scripts/check_repository.py \
             2>&1 | tee "$RUNNER_TEMP/p075-material-check.log"
+      - name: Check bounded failure accounting against independent public oracle
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 3145728
+          ulimit -t 115
+          timeout --signal=TERM --kill-after=10s 120s \
+            python -B tests/failure_regression.py \
+            2>&1 | tee "$RUNNER_TEMP/p075-failure-regression.log"
       - name: Reconstruct and verify all finite evidence without resume
         shell: bash
         run: |
@@ -48,5 +57,6 @@ jobs:
             ${{ runner.temp }}/p075-evidence/
             ${{ runner.temp }}/p075-whole-run.log
             ${{ runner.temp }}/p075-material-check.log
+            ${{ runner.temp }}/p075-failure-regression.log
           if-no-files-found: warn
           retention-days: 14

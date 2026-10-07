@@ -183,19 +183,22 @@ def audit(c:dict,seconds:float=110.0)->dict:
                 vals.append(lookup(v,p,args))
             runs[p,xs]=vals
         budget.check()
-    failures=[];gf=[]
+    local_failures=0;global_failures=0;first=None
     for ai,(p,q) in enumerate(arrows):
         for vi,v in enumerate(nodes):
             out=len(inputs)+vi
             for xs in tuples[vi]:
                 left=trans[out][ai][lookup(v,p,xs)]
                 right=lookup(v,q,tuple(trans[w][ai][x] for w,x in zip(v['inputs'],xs)))
-                if left!=right:failures.append([ai,vi,list(xs),left,right])
+                if left!=right:
+                    local_failures+=1
+                    if first is None and ai in gens:
+                        first=[ai,vi,list(xs),left,right]
         for xs in points:
             tx=tuple(trans[w][ai][x] for w,x in enumerate(xs))
             r,s=runs[p,xs],runs[q,tx]
             left=[trans[w][ai][r[w]] for w in outputs];right=[s[w] for w in outputs]
-            if left!=right:gf.append([ai,list(xs),left,right])
+            if left!=right:global_failures+=1
         budget.check()
     # Scalar observation tables use a constant chain codomain and identity transport.
     probe_failures=0;probe_checks=0
@@ -214,12 +217,11 @@ def audit(c:dict,seconds:float=110.0)->dict:
                     probe_checks+=1
                     if table[runs[p,xs][w]]!=table[runs[q,tx][w]]:probe_failures+=1
         budget.check()
-    first=next((z for z in failures if z[0] in gens),None)
     # Identity squares cannot fail; generator completeness supplies a one-letter witness.
-    require(not failures or first is not None,'GENERATOR_COMPLETENESS_INTERNAL_ERROR')
+    require(not local_failures or first is not None,'GENERATOR_COMPLETENESS_INTERNAL_ERROR')
     special=specialization(c,ds,wd)
-    return {'case':c['case'],**special,'locally_natural':not failures,'globally_natural':not gf,
-            'local_failures':len(failures),'global_failures':len(gf),'least_generator_witness':first,
+    return {'case':c['case'],**special,'locally_natural':not local_failures,'globally_natural':not global_failures,
+            'local_failures':local_failures,'global_failures':global_failures,'least_generator_witness':first,
             'objects':m,'arrows':h,'generators':len(gens),'nodes':len(nodes),'max_domain':max(sizes),
             'local_diagrams':h*sum(len(t) for t in tuples),'global_diagrams':h*len(points),
             'generator_diagrams':len(gens)*sum(len(t) for t in tuples),'table_entries':entries,
